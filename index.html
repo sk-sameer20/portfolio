@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of a Data Engineer showcasing skills, projects, and experience">
+    <meta name="keywords" content="web developer, portfolio, frontend, javascript, react, html, css">
+    <title> Sameer Khan | Data Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Animation -->
+    <div class="loading-container">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Sameer<span>Khan</span></a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn btn-outline" id="resume-btn">Resume</button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu-close" id="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav class="mobile-menu-links">
+            <a href="#home" class="mobile-menu-link active">Home</a>
+            <a href="#about" class="mobile-menu-link">About</a>
+            <a href="#skills" class="mobile-menu-link">Skills</a>
+            <a href="#projects" class="mobile-menu-link">Projects</a>
+            <a href="#experience" class="mobile-menu-link">Experience</a>
+            <a href="#contact" class="mobile-menu-link">Contact</a>
+        </nav>
+        <button class="btn btn-primary" id="mobile-resume-btn">Download Resume</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm <span class="text-gradient">Sameer Khan</span></h1>
+                    <h2 class="hero-subtitle">Data Engineer</h2>
+                    <p class="hero-description">
+                        I design and build efficient data pipelines and storage solutions to collect, process, and manage large-scale data from diverse sources. I ensure data quality, reliability, and accessibility for analytics and machine learning projects, using tools like Python, SQL, Apache Spark, and cloud platforms (AWS/Azure)
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Sameer Khan" class="lazy" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title hidden">About Me</h2>
+            <p class="section-subtitle hidden">Get to know me better</p>
+            
+            <div class="about-content">
+                <div class="about-image hidden">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="About Sameer" class="lazy" loading="lazy">
+                </div>
+                <div class="about-text hidden">
+                    <h3 class="about-title">Who am I?</h3>
+                    <p class="about-description">
+                        I'm a passionate frontend developer with 5+ years of experience creating modern web applications. 
+                        I specialize in JavaScript, React, and responsive design principles.
+                    </p>
+                    <p class="about-description">
+                        My journey in web development started when I was in college, and since then I've worked with 
+                        various startups and agencies to bring their digital products to life.
+                    </p>
+                    <p class="about-description">
+                        When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new 
+                        web technologies.
+                    </p>
+                    
+                    <div class="about-skills">
+                        <h4>My Skills</h4>
+                        <div class="skills-list">
+                            <span class="skill-item">HTML5</span>
+                            <span class="skill-item">CSS3</span>
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">TypeScript</span>
+                            <span class="skill-item">Node.js</span>
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title hidden">My Skills</h2>
+            <p class="section-subtitle hidden">Technologies I work with</p>
+            
+            <div class="skills-container">
+                <div class="skill-category hidden">
+                    <h3 class="skill-category-title"><i class="fas fa-code"></i> Frontend</h3>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="95"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS3/Sass</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">React</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category hidden">
+                    <h3 class="skill-category-title"><i class="fas fa-server"></i> Backend</h3>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="75"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">Express</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="70"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="65"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">REST APIs</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category hidden">
+                    <h3 class="skill-category-title"><i class="fas fa-tools"></i> Tools</h3>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">Webpack</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="70"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="75"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">VS Code</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title hidden">My Projects</h2>
+            <p class="section-subtitle hidden">Some of my recent work</p>
+            
+            <div class="projects-filter hidden">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card hidden" data-category="frontend">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="E-commerce Dashboard" class="lazy" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-item">React</span>
+                                <span class="tech-item">Chart.js</span>
+                                <span class="tech-item">Material UI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Dashboard</h3>
+                        <p class="project-description">
+                            A responsive admin dashboard for e-commerce with sales analytics, 
+                            product management, and customer insights.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn live">Live Demo</a>
+                            <a href="#" class="project-btn code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card hidden" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Task Management App" class="lazy" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-item">MERN Stack</span>
+                                <span class="tech-item">Redux</span>
+                                <span class="tech-item">JWT Auth</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            A fullstack task management application with user authentication, 
+                            team collaboration, and real-time updates.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn live">Live Demo</a>
+                            <a href="#" class="project-btn code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card hidden" data-category="frontend">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=836&q=80" alt="Weather App" class="lazy" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-item">JavaScript</span>
+                                <span class="tech-item">API</span>
+                                <span class="tech-item">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather App</h3>
+                        <p class="project-description">
+                            A weather application that displays current and forecasted weather 
+                            conditions for any location using the OpenWeather API.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn live">Live Demo</a>
+                            <a href="#" class="project-btn code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card hidden" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Fitness Tracker" class="lazy" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-item">React Native</span>
+                                <span class="tech-item">Firebase</span>
+                                <span class="tech-item">Expo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Fitness Tracker</h3>
+                        <p class="project-description">
+                            A mobile fitness application to track workouts, set goals, 
+                            and monitor progress with interactive charts.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn live">Live Demo</a>
+                            <a href="#" class="project-btn code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card hidden" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Blog Platform" class="lazy" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-item">Node.js</span>
+                                <span class="tech-item">MongoDB</span>
+                                <span class="tech-item">Express</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Blog Platform</h3>
+                        <p class="project-description">
+                            A fullstack blog platform with user authentication, 
+                            rich text editing, and comment functionality.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn live">Live Demo</a>
+                            <a href="#" class="project-btn code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card hidden" data-category="frontend">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Portfolio Template" class="lazy" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-item">HTML5</span>
+                                <span class="tech-item">CSS3</span>
+                                <span class="tech-item">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Template</h3>
+                        <p class="project-description">
+                            A responsive portfolio template with modern design, 
+                            animations, and easy customization options.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn live">Live Demo</a>
+                            <a href="#" class="project-btn code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <h2 class="section-title hidden">Experience & Education</h2>
+            <p class="section-subtitle hidden">My professional journey</p>
+            
+            <div class="timeline">
+                <div class="timeline-item hidden">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - Present</span>
+                        <h3 class="timeline-title">Senior Frontend Developer</h3>
+                        <p class="timeline-company">TechSolutions Inc.</p>
+                        <p class="timeline-description">
+                            Lead the frontend development team, architecting scalable React applications 
+                            and implementing best practices for performance and accessibility.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item hidden">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2018 - 2021</span>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <p class="timeline-company">Digital Creations Agency</p>
+                        <p class="timeline-description">
+                            Developed responsive websites and web applications for clients across various 
+                            industries, focusing on user experience and modern JavaScript frameworks.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item hidden">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2016 - 2018</span>
+                        <h3 class="timeline-title">Junior Web Developer</h3>
+                        <p class="timeline-company">StartUp Ventures</p>
+                        <p class="timeline-description">
+                            Built and maintained company websites, implemented new features, 
+                            and collaborated with designers to create engaging user interfaces.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item hidden">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2012 - 2016</span>
+                        <h3 class="timeline-title">B.Sc. Computer Science</h3>
+                        <p class="timeline-company">State University</p>
+                        <p class="timeline-description">
+                            Graduated with honors, specializing in web technologies and human-computer 
+                            interaction. Completed coursework in advanced JavaScript and UI/UX design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <h2 class="section-title hidden">Testimonials</h2>
+            <p class="section-subtitle hidden">What people say about my work</p>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-slide active">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" class="testimonial-avatar lazy" loading="lazy">
+                    <p class="testimonial-text">
+                        Sameer is an exceptional developer who consistently delivers high-quality work. 
+                        His attention to detail and problem-solving skills are unmatched.
+                    </p>
+                    <h4 class="testimonial-author">Sarah Johnson</h4>
+                    <p class="testimonial-role">CEO at TechSolutions Inc.</p>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen" class="testimonial-avatar lazy" loading="lazy">
+                    <p class="testimonial-text">
+                        Working with Alex was a pleasure. He transformed our complex requirements 
+                        into a beautiful, functional application that our users love.
+                    </p>
+                    <h4 class="testimonial-author">Michael Chen</h4>
+                    <p class="testimonial-role">Product Manager at Digital Creations</p>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez" class="testimonial-avatar lazy" loading="lazy">
+                    <p class="testimonial-text">
+                        Alex's technical expertise and collaborative approach made him an invaluable 
+                        member of our team. He consistently exceeded our expectations.
+                    </p>
+                    <h4 class="testimonial-author">Emily Rodriguez</h4>
+                    <p class="testimonial-role">CTO at StartUp Ventures</p>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title hidden">Get In Touch</h2>
+            <p class="section-subtitle hidden">Have a project in mind or want to connect?</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item hidden">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:alex@example.com">alex@example.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item hidden">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item hidden">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item hidden">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Working Hours</h3>
+                            <p>Mon-Fri: 9am - 5pm</p>
+                            <p>Sat-Sun: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form hidden">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Send Message</button>
+                        
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">sameer<span>Carter</span></a>
+                
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#skills" class="footer-link">Skills</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#experience" class="footer-link">Experience</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-codepen"></i></a>
+                </div>
+                
+                <p class="footer-copyright">
+                    &copy; <span id="year"></span> sameer Carter. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="port.js"></script>
+</body>
+</html>
